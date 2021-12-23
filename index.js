@@ -15,15 +15,14 @@ function updateMap() {
                     color=`rgb(${cases}, 0, 0)`
                 }
                 //Mark On The Map;
-                 new mapboxgl.Marker({
+               
+                const marker = new mapboxgl.Marker({
                     draggable: true,
-                    color:color
+                     color:color
                     })
-                
                     .setLngLat([longitude, latitude])
-
                     .addTo(map);
-
+                
                      
             });
         })
